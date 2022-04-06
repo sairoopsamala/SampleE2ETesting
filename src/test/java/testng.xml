@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+
+<suite name="InetBankingV1">
+
+	<listeners>
+	
+		<listener class-name="com.inetbanking.utilities.Reporting" />
+
+	</listeners>
+   <test name="BankingApp Test">
+   
+      <parameter name="browser" value="chrome" />
+      
+   
+   
+   	<classes>
+   	
+   	  	<class name="com.inetbanking.testcases.TC_LoginTest_001" />  
+   		<class name="com.inetbanking.testcases.TC_LoginDDT_002" />   
+   		<class name="com.inetbanking.testcases.TC_AddCustomerTest_003" />
+   	</classes>
+	
+	</test>
+	
+</suite>
+
+ <!-- <suite name="Yahoo App Test Automation Suite">
+
+   <test name="Yahoo App Test">
+   
+      <parameter name="env" value="QA" />
+      <parameter name="browser" value="chrome" />
+      <parameter name="url" value="https://login.yahoo.com" />
+      <parameter name="emailId" value="test@yahoo.com" />
+   
+   
+   	<classes>
+   		<class name="com.nk.dao.ParameterTest" />   	    
+   	</classes>
+   	
+   </test>
+
+</suite>  -->
+
+<!-- <suite name="TestNG Session Test Automation Suite">
+
+   <test name="Different testng Feature Test">
+   
+   	<classes>
+   		<class name="com.nk.dao.GoogleTest" />
+   	   	<class name="com.nk.dao.GoogleTitleTest" />
+   	    <class name="com.nk.dao.TestNGFeatures" />
+   	    
+   	</classes>
+   	
+   </test>
+
+</suite> -->
